@@ -1,0 +1,19 @@
+.Search_input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.Search_icon {
+  border: 1px solid black;
+  max-width: 350px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 5px 5px;
+  border-radius: 6px;
+}
+
+.icons {
+  font-size: 24px;
+  font-weight: 500;
+}

@@ -1,0 +1,23 @@
+.poster_image {
+  width: 100%;
+  height: 300px;
+  object-fit: fill;
+}
+
+/* .card:hover .wrapper::before,
+.wrapper::after {
+  opacity: 1;
+}
+
+.card:hover .wrapper::after {
+  height: 120px;
+}
+
+.title {
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+.card:hover .title {
+  transform: translate(0%, -50px, 100px);
+} */
