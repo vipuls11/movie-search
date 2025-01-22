@@ -9,9 +9,9 @@ const Movies = () => {
     // console.log(movie, 'movie')
     return (
         <div className='container py-5'>
-            <div>
+            {/* <div>
                 <Search />
-            </div>
+            </div> */}
             <div className='row justify-content-center g-md-3 g-4'>
                 {movie.map((movielem) => {
                     // console.log(movielem)

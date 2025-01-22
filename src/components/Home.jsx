@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import Movies from './Movies';
+import Search from './Search';
 
 
 
@@ -9,7 +9,7 @@ const Home = () => {
         <>
             <div>
 
-                <Movies />
+                <Search />
             </div>
         </>
     )

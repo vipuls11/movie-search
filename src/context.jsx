@@ -22,7 +22,7 @@ const AppProvider = ({ children }) => {
       const result = await response.json()
       console.log(result)
       if (result.Response === 'True') {
-        setLoading('false')
+        setLoading(false)
         setMovie(result.Search)
       } else {
         setIsError({
@@ -33,10 +33,14 @@ const AppProvider = ({ children }) => {
     } catch (error) {
       console.warn(error)
     }
+    finally {
+      setLoading(false); // Make sure loading is set to false after the fetch completes
+    }
   }
 
   useEffect(() => {
     const Timeouter = setTimeout(() => {
+      setLoading(true)
       getMovies(`${API_URL}&s=${query}`);
 
     }, 800);
