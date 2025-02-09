@@ -1,6 +1,5 @@
 import React from 'react'
 import './css/Movies.css'
-import Search from './Search';
 import { useGlobalContext } from '../context'
 import { NavLink } from 'react-router-dom';
 
@@ -18,7 +17,7 @@ const Movies = () => {
                     const { Poster, Title, Type, Year, imdbID } = movielem;
                     const MovieTitle = Title.substring(0, 15)
                     return (
-                        <NavLink to={`/movie/${imdbID}`} className=' col-md-3 ' key={imdbID}>
+                        <NavLink to={`/movie/${imdbID}`} className='col-md-3 shadow-lg' key={imdbID}>
                             <div className="card border rounded p-3">
                                 <img src={Poster} alt={Title} className='wrapper poster_image' />
                                 <div className='my-2'>

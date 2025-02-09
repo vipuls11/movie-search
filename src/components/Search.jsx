@@ -9,7 +9,7 @@ const Search = () => {
         setQuery(e.target.value)
     };
     return (
-        <section className='text-center'>
+        <section className='text-center pt-5'>
             <h5 className="">Search your favourite Movie</h5>
             <form action="#" onSubmit={(e) => e.preventDefault()}>
                 <div className='Search_icon text-center my-3'>
